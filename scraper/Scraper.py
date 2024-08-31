@@ -833,9 +833,9 @@ def update():
 
 
 if __name__ == "__main__":
-    # time.sleep(30)
+    time.sleep(30)
     update()
-    # schedule.every().saturday.at("02:00").do(update)
-    # while 1:
-    #     schedule.run_pending()
-    #     time.sleep(1)
+    schedule.every().saturday.at("02:00").do(update)
+    while 1:
+        schedule.run_pending()
+        time.sleep(1)
