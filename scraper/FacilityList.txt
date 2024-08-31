@@ -1,0 +1,173 @@
+{'Name': 'Adam Beck Community Centre', 'phone': '416-392-0741', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/13/index.html'}
+{'Name': 'Agincourt Recreation Centre', 'phone': '416-396-4037', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/523/index.html'}
+{'Name': 'Albion Arena', 'phone': '416-394-8690', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/800/index.html'}
+{'Name': 'Albion Pool and Health Club', 'phone': '416-394-8676', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/893/index.html'}
+{'Name': 'Alderwood Centre', 'phone': '416-394-8738', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/897/index.html'}
+{'Name': 'Amesbury Community Centre', 'phone': '416-395-0145', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/472/index.html'}
+{'Name': 'Amesbury Sports Complex', 'phone': '416-395-6683', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/480/index.html'}
+{'Name': 'Ancaster Community Centre', 'phone': '416-395-6057', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/487/index.html'}
+{'Name': 'Angela James Arena', 'phone': '', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/582/index.html'}
+{'Name': 'Annette Community Recreation Centre', 'phone': '416-392-0736', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/17/index.html'}
+{'Name': 'Antibes Community Centre', 'phone': '416-395-0096', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/42/index.html'}
+{'Name': 'Armour Heights Community Centre', 'phone': '416-395-7848', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/503/index.html'}
+{'Name': 'Banbury Community Centre', 'phone': '416-395-6101', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/511/index.html'}
+{'Name': 'Barbara Frum Community Centre', 'phone': '416-395-6123', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1045/index.html'}
+{'Name': 'Baycrest Arena', 'phone': '416-395-7960', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/512/index.html'}
+{'Name': 'Bayview Arena', 'phone': '416-395-7825', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/515/index.html'}
+{'Name': 'Beaches Recreation Centre', 'phone': '416-392-0740', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/24/index.html'}
+{'Name': 'Bedford Park Community Centre', 'phone': '416-392-0618', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/27/index.html'}
+{'Name': 'Berner Trail Community Centre', 'phone': '416-396-4054', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/535/index.html'}
+{'Name': 'Birchmount Community Centre', 'phone': '416-396-4311', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/507/index.html'}
+{'Name': 'Birkdale Community Centre', 'phone': '416-396-4069', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/289/index.html'}
+{'Name': 'Bloordale Community School', 'phone': '416-394-8699', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1132/index.html'}
+{'Name': 'Bob Abate Community Recreation Centre', 'phone': '416-392-0744', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/30/index.html'}
+{'Name': 'Broadlands Community Centre', 'phone': '416-395-7966', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/7/index.html'}
+{'Name': 'Brown Community Centre', 'phone': '416-392-6826', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/33/index.html'}
+{'Name': 'Burrows Hall Community Centre', 'phone': '416-396-4670', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/591/index.html'}
+{'Name': 'Canoe Landing Community Recreation Centre', 'phone': '416-397-4200', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/3643/index.html'}
+{'Name': 'Carmine Stefano Community Centre', 'phone': '416-395-6127', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/350/index.html'}
+{'Name': 'Cedarbrook Community Centre', 'phone': '416-396-4028', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/600/index.html'}
+{'Name': 'Centennial Park Arena', 'phone': '416-394-8758', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/913/index.html'}
+{'Name': 'Centennial Recreation Centre - Scarborough', 'phone': '416-396-4057', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/537/index.html'}
+{'Name': 'Central Arena', 'phone': '416-394-5439', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/824/index.html'}
+{'Name': 'Chalkfarm Community Centre', 'phone': '416-395-7802', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/486/index.html'}
+{'Name': 'Chris Tonks Arena', 'phone': '416-394-2733', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/476/index.html'}
+{'Name': 'Commander Recreation Centre', 'phone': '416-396-4024', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/558/index.html'}
+{'Name': 'Cummer Park Community Centre', 'phone': '416-395-7803', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/499/index.html'}
+{'Name': 'Curran Hall Community Centre', 'phone': '416-396-5156', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/782/index.html'}
+{'Name': 'David Appleton Community Recreation Centre', 'phone': '416-394-2896', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/25/index.html'}
+{'Name': 'Dennis R. Timbrell Resource Centre', 'phone': '416-395-7972', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1056/index.html'}
+{'Name': 'Domenico Di Luca Community Recreation Centre', 'phone': '416 395-6673', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/760/index.html'}
+{'Name': 'Don Montgomery Community Centre', 'phone': '416-396-4043', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/712/index.html'}
+{'Name': 'Douglas Snow Aquatic Centre', 'phone': '416-395-7585', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/567/index.html'}
+{'Name': 'Downsview Arena', 'phone': '416-395-7831', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/568/index.html'}
+{'Name': 'Driftwood Community Recreation Centre', 'phone': '416-395-0226', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/575/index.html'}
+{'Name': 'Earl Bales Community Centre', 'phone': '416-395-7873', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/171/index.html'}
+{'Name': 'Earl Beatty Community Centre', 'phone': '416-392-0752', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/36/index.html'}
+{'Name': 'East York Community Centre', 'phone': '416-396-2880', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/329/index.html'}
+{'Name': 'East York Curling Club', 'phone': '416-396-2816', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1855/index.html'}
+{'Name': 'East York Memorial Arena', 'phone': '416-396-2869', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/330/index.html'}
+{'Name': 'Edenbridge Centre', 'phone': '416-392-2451', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/436/index.html'}
+{'Name': 'Edgehill House', 'phone': '416-392-2724', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/428/index.html'}
+{'Name': 'Edithvale Community Centre', 'phone': '416-395-6164', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1463/index.html'}
+{'Name': 'Ellesmere Community Centre', 'phone': '416-396-5536', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/617/index.html'}
+{'Name': 'Elmbank Community Centre', 'phone': '416-394-8671', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/750/index.html'}
+{'Name': "Ethennonnhawahstihnen' Community Recreation Centre and Library", 'phone': '416-392-4826', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/3775/index.html'}
+{'Name': 'Etobicoke Civic Centre', 'phone': '', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1062/index.html'}
+{'Name': 'Etobicoke Olympium', 'phone': '416-394-8111', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/892/index.html'}
+{'Name': 'Fairbank Memorial Community Centre', 'phone': '416-394-2473', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/482/index.html'}
+{'Name': "Fairfield Seniors' Centre", 'phone': '416-394-8686', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/822/index.html'}
+{'Name': 'Fairmount Park Community Centre', 'phone': '416-392-7060', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/308/index.html'}
+{'Name': 'Falstaff Community Centre', 'phone': '416-395-1199', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1063/index.html'}
+{'Name': 'Fenside Arena', 'phone': '416-395-7846', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/303/index.html'}
+{'Name': 'Flemingdon Community Centre', 'phone': '416-395-6014', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/583/index.html'}
+{'Name': 'Frankland Community Centre', 'phone': '416-392-0749', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/39/index.html'}
+{'Name': 'Glen Long Community Centre', 'phone': '416-395-7921', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/638/index.html'}
+{'Name': 'Gord and Irene Risk Community Centre', 'phone': '416-395-0355', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/642/index.html'}
+{'Name': 'Goulding Community Centre', 'phone': '416-395-0123', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/643/index.html'}
+{'Name': 'Grandravine Community Recreation Centre', 'phone': '416-395-6171', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/647/index.html'}
+{'Name': 'Gus Ryder Pool and Health Club', 'phone': '416-394-8726', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/896/index.html'}
+{'Name': 'Habitant Arena', 'phone': '416-395-7949', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/652/index.html'}
+{'Name': 'Harrison Pool', 'phone': '416-392-7984', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/45/index.html'}
+{'Name': 'Harwood Hall', 'phone': '416-394-2747', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/478/index.html'}
+{'Name': 'Herbert H. Carnegie Centennial Centre', 'phone': '416-395-6067', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/483/index.html'}
+{'Name': 'Heron Park Community Centre', 'phone': '416-396-4035', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/633/index.html'}
+{'Name': 'Hillcrest Community Centre', 'phone': '416-392-0746', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/48/index.html'}
+{'Name': 'Hilltop Community School', 'phone': '416-394-8701', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1219/index.html'}
+{'Name': 'Hollycrest Community School', 'phone': '416-394-8703', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1221/index.html'}
+{'Name': 'Holy Family Community Centre', 'phone': '416-392-6695', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/52/index.html'}
+{'Name': 'Horner Avenue Seniors Centre', 'phone': '416 394-6001', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/823/index.html'}
+{'Name': 'Humberwood Community Centre', 'phone': '416-394-5700', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/755/index.html'}
+{'Name': 'Irving W. Chapley Community Centre', 'phone': '416-395-7880', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/664/index.html'}
+{'Name': 'Islington Community School', 'phone': '416-394-8705', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1232/index.html'}
+{'Name': "Islington Seniors' Centre", 'phone': '416-231-3431', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/821/index.html'}
+{'Name': 'Jack Goodlad Community Centre', 'phone': '416-396-7566', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/630/index.html'}
+{'Name': 'James S. Bell Community School', 'phone': '416-394-8707', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1234/index.html'}
+{'Name': 'Jenner Jean-Marie Community Centre', 'phone': '416-396-2874', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1076/index.html'}
+{'Name': 'Jimmie Simpson Recreation Centre', 'phone': '416-392-0751', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/58/index.html'}
+{'Name': 'John Booth Memorial Arena', 'phone': '416-395-7942', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/667/index.html'}
+{'Name': 'John English Community School', 'phone': '416-394-8711', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1236/index.html'}
+{'Name': 'John G. Althouse Community School', 'phone': '416-394-8709', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1237/index.html'}
+{'Name': 'John Innes Community Recreation Centre', 'phone': '416-392-6779', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/63/index.html'}
+{'Name': 'Joseph J. Piccininni Community Centre', 'phone': '416-392-0036', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/509/index.html'}
+{'Name': 'Keele Community Centre', 'phone': '416-392-0695', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/84/index.html'}
+{'Name': 'Ken Cox Community Centre', 'phone': '416-392-6355', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1078/index.html'}
+{'Name': 'Kingsview Village Community School', 'phone': '416-394-5540', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1244/index.html'}
+{'Name': "L'Amoreaux Community Recreation Centre", 'phone': '416-396-4510', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/788/index.html'}
+{'Name': 'Lambton Arena', 'phone': '416-394-2735', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/479/index.html'}
+{'Name': 'Lawrence Heights Community Centre', 'phone': '416-395-6118', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/675/index.html'}
+{'Name': 'Leaside Curling Club', 'phone': '647-748-CURL (2875)', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1856/index.html'}
+{'Name': 'Long Branch Arena', 'phone': '416-394-8694', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/803/index.html'}
+{'Name': 'Main Square Community Centre', 'phone': '416-392-1070', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/85/index.html'}
+{'Name': 'Malvern Recreation Centre', 'phone': '416-396-4054', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/702/index.html'}
+{'Name': 'Mary McCormick Recreation Centre', 'phone': '416-392-0742', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/100/index.html'}
+{'Name': 'Masaryk-Cowan Community Recreation Centre', 'phone': '416-392-6928', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/89/index.html'}
+{'Name': 'Matty Eckler Recreation Centre', 'phone': '416-392-0750', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/234/index.html'}
+{'Name': 'Maurice Cody Community Centre', 'phone': '416-392-0747', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/96/index.html'}
+{'Name': 'McGregor Park Community Centre', 'phone': '416-396-4023', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/506/index.html'}
+{'Name': 'Memorial Pool and Health Club', 'phone': '416-394-8731', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/891/index.html'}
+{'Name': 'Milliken Park Community Recreation Centre', 'phone': '416-396-7757', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/405/index.html'}
+{'Name': 'Mimico Arena', 'phone': '416-394-8695', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/802/index.html'}
+{'Name': 'Mitchell Field Community Centre', 'phone': '416-395-0265', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/693/index.html'}
+{'Name': 'Mount Dennis Community Hall', 'phone': '416-394-2747', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1462/index.html'}
+{'Name': "New Toronto Seniors' Centre", 'phone': '416-394-8684', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1091/index.html'}
+{'Name': 'Norseman Community School and Pool', 'phone': '416-394-8719', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/797/index.html'}
+{'Name': 'North Kipling Community Centre', 'phone': '416-394-8679', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/749/index.html'}
+{'Name': 'North Toronto Memorial Community Centre', 'phone': '416-392-6591', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/189/index.html'}
+{'Name': 'North York Civic Centre', 'phone': '416-395-7584', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/927/index.html'}
+{'Name': 'Northwood Community Centre', 'phone': '416-395-7284', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/703/index.html'}
+{'Name': "O'Connor Community Centre", 'phone': '416-395-7957', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1093/index.html'}
+{'Name': 'Oakdale Community Centre', 'phone': '416-395-0484', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/780/index.html'}
+{'Name': 'Oakridge Community Recreation Centre', 'phone': '416-338-1966', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/731/index.html'}
+{'Name': 'One Yonge Community Recreation Centre', 'phone': '416 392-9006', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/3732/index.html'}
+{'Name': 'Oriole Community Centre', 'phone': '416-395-6005', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/714/index.html'}
+{'Name': 'Ourland Community Centre', 'phone': '416-394-8673', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/793/index.html'}
+{'Name': 'Pam McConnell Aquatic Centre', 'phone': '416-338-2237', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/2012/index.html'}
+{'Name': 'Park Lawn Community School', 'phone': '416-394-8713', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1288/index.html'}
+{'Name': 'Parkdale Community Recreation Centre', 'phone': '416-392-6696', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/243/index.html'}
+{'Name': 'Parkway Forest Community Centre', 'phone': '416-392-6383', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/2791/index.html'}
+{'Name': 'Pelmo Park Community Centre', 'phone': '416-394-2747', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/722/index.html'}
+{'Name': 'Phil White Arena', 'phone': '416-394-2734', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/477/index.html'}
+{'Name': 'Pine Point Arena', 'phone': '416-394-8692', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/801/index.html'}
+{'Name': 'Pleasant View Community Centre', 'phone': '416-395-6006', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/732/index.html'}
+{'Name': 'Port Union Community Recreation Centre', 'phone': '416-396-4031', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/883/index.html'}
+{'Name': 'Power House Recreation Centre', 'phone': '416-338-1081', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1429/index.html'}
+{'Name': 'Regent Park Community Centre', 'phone': '416-392-5490', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/3502/index.html'}
+{'Name': 'Roding Community Centre', 'phone': '416-395-7964', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/744/index.html'}
+{'Name': 'Roywood Park R.C. Clubhouse', 'phone': '416-395-0159', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1889/index.html'}
+{'Name': 'S.H. Armstrong Community Centre', 'phone': '416-392-0734', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/267/index.html'}
+{'Name': 'Scadding Court Community Centre', 'phone': '416-392-0335', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1098/index.html'}
+{'Name': 'Scarborough Arena Gardens', 'phone': '416-396-4137', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/3493/index.html'}
+{'Name': 'Scarborough Civic Centre', 'phone': '416-397-7220', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1099/index.html'}
+{'Name': 'Scarborough Village Recreation Centre', 'phone': '416-396-4048', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/743/index.html'}
+{'Name': 'Secord Community Centre', 'phone': '416-396-2857', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/325/index.html'}
+{'Name': 'Seneca Village Community Centre', 'phone': '416-395-7671', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/751/index.html'}
+{'Name': 'Smithfield Community School', 'phone': '416-394-8715', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1320/index.html'}
+{'Name': 'St. Lawrence Community Recreation Centre', 'phone': '416-392-1347', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/272/index.html'}
+{'Name': 'St. Marcellus Community School', 'phone': '416-394-5490', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1344/index.html'}
+{'Name': 'Stan Wadlow Clubhouse', 'phone': '416-396-2842', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/297/index.html'}
+{'Name': 'Stephen Leacock Community Recreation Centre', 'phone': '416-396-4184', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1105/index.html'}
+{'Name': 'Stephen Leacock Seniors Community Centre', 'phone': '416-396-4040', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1873/index.html'}
+{'Name': 'Swansea Community Recreation Centre', 'phone': '416-392-6796', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/282/index.html'}
+{'Name': 'Tall Pines Community Centre', 'phone': '416-396-4350', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/623/index.html'}
+{'Name': 'Tam Heather Curling and Tennis Club', 'phone': '416-284-9251', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/624/index.html'}
+{'Name': 'Terry Fox Recreation Centre', 'phone': '416-392-7060', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/336/index.html'}
+{'Name': 'The Elms Pool and Community School', 'phone': '416-394-8983', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/795/index.html'}
+{'Name': 'The New Generation Youth Recreation Centre', 'phone': '416-984-4512', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/474/index.html'}
+{'Name': 'Thistletown Community Centre', 'phone': '416-394-8717', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/354/index.html'}
+{'Name': "Thistletown Seniors' Centre", 'phone': '416-394-8869', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/397/index.html'}
+{'Name': 'Toronto Pan Am Sports Centre', 'phone': '416-283-5222', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/2773/index.html'}
+{'Name': 'Toronto Track and Field Centre', 'phone': '416-392-2522', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/460/index.html'}
+{'Name': 'Trace Manes Park Community Centre', 'phone': '416-396-2853', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/705/index.html'}
+{'Name': 'Trinity Community Recreation Centre', 'phone': '416-392-0743', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/287/index.html'}
+{'Name': 'Victoria Village Recreation Centre and Arena', 'phone': '416-395-0143', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/771/index.html'}
+{'Name': 'Viewmount Community Centre', 'phone': '416-395-6021', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/839/index.html'}
+{'Name': 'Wallace Emerson Community Centre', 'phone': '416-392-0039', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/294/index.html'}
+{'Name': 'Warden Hilltop Community Centre', 'phone': '416-392-7640', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/1865/index.html'}
+{'Name': 'Wellesley Community Centre', 'phone': '416-392-0227', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/451/index.html'}
+{'Name': 'West Acres Seniors Centre', 'phone': '416-394-8680', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/396/index.html'}
+{'Name': 'West Rouge Community Centre', 'phone': '416-396-4147', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/584/index.html'}
+{'Name': 'Withrow Park and Clubhouse', 'phone': '', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/306/index.html'}
+{'Name': 'York Civic Centre', 'phone': '', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/525/index.html'}
+{'Name': 'York Mills Arena', 'phone': '416-395-7844', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/778/index.html'}
+{'Name': 'York Recreation Centre', 'phone': '416-392-9675', 'url': 'https://www.toronto.ca/data/parks/prd/facilities/complex/3501/index.html'}
