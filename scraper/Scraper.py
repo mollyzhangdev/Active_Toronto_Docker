@@ -230,7 +230,7 @@ def getOriginalFacilities(availablities):
                         street_type = ''
 
                     street = street_no + street_suffix + street_name + street_type
-                    print(street)
+
                     facilitiesNoGeo.append(
                         {
                             "location_id": locat[0],
@@ -268,8 +268,8 @@ def getGeo(facility):
         facility["street"] + " " + facility["city"] + " " + facility["province"]
     )
     addressStr = addressStr.replace(" ", "%20")
-    url = GOOGLE_API_URL + addressStr + "&key=" + GOOGLE_API_KEY
-    params = {"key": "value"}
+    url = GOOGLE_API_URL + addressStr
+    params = {"key": GOOGLE_API_KEY}
     r = requests.get(url=url, params=params)
     response = r.json()
     geometry = response["results"][0]["geometry"]["location"]
@@ -820,10 +820,12 @@ def update():
         facilities = getOriginalFacilities(availabilities)
         connect_db()
         facilities = get_new_facilities(facilities)
-        if (len(facilities) != 0 ):
+
+        if (len(facilities) != 0):
             facilities = getGeoToFacilities(facilities)
             facilities = getPhoneUrlToFacilities(facilities)
         update_db(availabilities, facilities)
+
         
         logger.info(
             "------------------------------------------------End------------------------------------------------"
