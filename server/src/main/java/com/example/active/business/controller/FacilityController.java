@@ -1,7 +1,6 @@
 package com.example.active.business.controller;
 
 import com.example.active.business.domain.FacilityDTO;
-import com.example.active.business.domain.enums.ActivitySortEnum;
 import com.example.active.business.domain.enums.CityFilterEnum;
 import com.example.active.business.domain.enums.FacilitySortEnum;
 import com.example.active.business.domain.enums.LanguageFilterEnum;
@@ -21,8 +20,6 @@ import org.springframework.web.server.ResponseStatusException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
