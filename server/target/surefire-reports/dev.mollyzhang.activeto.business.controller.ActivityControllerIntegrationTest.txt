@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: dev.mollyzhang.activeto.business.controller.ActivityControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 117.243 s - in dev.mollyzhang.activeto.business.controller.ActivityControllerIntegrationTest
