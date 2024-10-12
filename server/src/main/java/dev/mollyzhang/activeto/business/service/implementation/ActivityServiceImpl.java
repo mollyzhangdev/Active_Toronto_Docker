@@ -91,6 +91,7 @@ public class ActivityServiceImpl implements ActivityService {
                         ) < MAX_STRING_EDIT_DISTANCE)
                 .sorted(Comparator.comparing(typeDTO -> stringDistanceScore(params.getQuery(), typeDTO.getTitle())))
                 .sorted(getComparator(params.getSortEnum()))
+                .distinct()
                 .collect(Collectors.toList());
         return listToPage(activities,params.getPageNumber(), params.getPageSize());
     }
@@ -137,6 +138,7 @@ public class ActivityServiceImpl implements ActivityService {
                         ) < MAX_STRING_EDIT_DISTANCE)
                 .sorted(Comparator.comparing(typeDTO -> stringDistanceScore(params.getQuery(), typeDTO.getTitle())))
                 .sorted(getComparator(params.getSortEnum()))
+                .distinct()
                 .collect(Collectors.toList());
         return listToPage(activities,params.getPageNumber(), params.getPageSize());
     }
@@ -184,6 +186,7 @@ public class ActivityServiceImpl implements ActivityService {
                         stringDistanceScore(params.getQuery(), activityDTO.getType())) < MAX_STRING_EDIT_DISTANCE)
                 .sorted(Comparator.comparing(typeDTO -> stringDistanceScore(params.getQuery(), typeDTO.getTitle())))
                 .sorted(getComparator(params.getSortEnum()))
+                .distinct()
                 .collect(Collectors.toList());
         return listToPage(activities,params.getPageNumber(), params.getPageSize());
     }

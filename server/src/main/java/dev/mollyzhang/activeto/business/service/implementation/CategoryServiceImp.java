@@ -75,6 +75,7 @@ public class CategoryServiceImp implements CategoryService {
                 .filter(categoryDTO -> stringDistanceScore(params.getQuery(), categoryDTO.getTitle()) < MAX_STRING_EDIT_DISTANCE)
                 .sorted(Comparator.comparing(CategoryDTO::getTitle))
                 .sorted(Comparator.comparing(categoryDTO -> stringDistanceScore(params.getQuery(), categoryDTO.getTitle())))
+                .distinct()
                 .collect(Collectors.toList());
         return listToPage(categories, params.getPageNumber(), params.getPageSize());
     }

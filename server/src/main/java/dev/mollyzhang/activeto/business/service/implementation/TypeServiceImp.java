@@ -59,6 +59,7 @@ public class TypeServiceImp implements TypeService {
                 .filter(typeDTO -> stringDistanceScore(params.getQuery(), typeDTO.getTitle()) < MAX_STRING_EDIT_DISTANCE)
                 .sorted(Comparator.comparing(typeDTO -> stringDistanceScore(params.getQuery(), typeDTO.getTitle())))
                 .sorted(getComparatorForTypeDTO(params.getSortEnum()))
+                .distinct()
                 .collect(Collectors.toList());
         return listToPage(types, params.getPageNumber(), params.getPageSize());
     }
@@ -77,6 +78,7 @@ public class TypeServiceImp implements TypeService {
                 .filter(typeDTO -> stringDistanceScore(params.getQuery(), typeDTO.getTitle()) < MAX_STRING_EDIT_DISTANCE)
                 .sorted(Comparator.comparing(typeDTO -> stringDistanceScore(params.getQuery(), typeDTO.getTitle())))
                 .sorted(getComparatorForTypeDTO(params.getSortEnum()))
+                .distinct()
                 .collect(Collectors.toList());
         return listToPage(types, params.getPageNumber(), params.getPageSize());
     }
@@ -120,6 +122,7 @@ public class TypeServiceImp implements TypeService {
                 .filter(typeDTO -> stringDistanceScore(params.getQuery(), typeDTO.getTitle()) < MAX_STRING_EDIT_DISTANCE)
                 .sorted(Comparator.comparing(typeDTO -> stringDistanceScore(params.getQuery(), typeDTO.getTitle())))
                 .sorted(getComparatorForTypeDTO(params.getSortEnum()))
+                .distinct()
                 .collect(Collectors.toList());
 
         return listToPage(types, params.getPageNumber(), params.getPageSize());
