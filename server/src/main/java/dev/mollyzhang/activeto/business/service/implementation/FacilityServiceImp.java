@@ -74,6 +74,7 @@ public class FacilityServiceImp implements FacilityService {
                 .filter(facilityDTO -> stringDistanceScore(params.getQuery(), facilityDTO.getTitle()) < MAX_STRING_EDIT_DISTANCE)
                 .sorted(Comparator.comparing(facilityDTO -> stringDistanceScore(params.getQuery(), facilityDTO.getTitle())))
                 .sorted(getComparator(params.getSortEnum()))
+                .distinct()
                 .collect(Collectors.toList());
         return listToPage(facilities, params.getPageNumber(), params.getPageSize());
     }
