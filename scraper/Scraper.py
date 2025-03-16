@@ -52,6 +52,7 @@ FIND_ACTIVITY_BY_ID = "SELECT * FROM `activity` WHERE `id` = %s;"
 FIND_TYPE_BY_DESC = "SELECT * FROM `type` INNER JOIN `translation` ON `type`.title_translation_id = `translation`.id INNER JOIN `language_translation` ON `translation`.id = `language_translation`.translation_id WHERE description = %s"
 FIND_CATEGORY_BY_DESC = "SELECT * FROM `category` INNER JOIN `translation` ON `category`.title_translation_id = `translation`.id INNER JOIN `language_translation` ON `translation`.id = `language_translation`.translation_id WHERE description = %s"
 FIND_TRANSLATION_BY_DESC = "SELECT * FROM `language_translation` WHERE description = %s"
+
 # global mydb
 
 
@@ -415,6 +416,16 @@ def description_exists(desc):
     cursor.close()
     return description_id
 
+def availability_exists(facility:int, activity:int, start_time):
+    availability_id = 0
+    cursor = mydb.cursor()
+    cursor.execute(FIND_AVAILABILITY_BY_START_TIME, (facility, activity, start_time, ))
+    rows = cursor.fetchall()
+    if len(rows) != 0:
+        availability_id = rows[0][0]
+    cursor.close()
+    return availability_id
+
 
 def get_new_facilities(facilities):
     logger.info("Getting new facilities...")
@@ -525,7 +536,9 @@ def store_new_availabilities(availabilities):
                 facility_id
             )
 
-        insert_new_availability(availability, facility_id, activity_id)
+        availability_id = availability_exists(facility_id, activity_id, start_time)
+        if availability_id == 0:
+            insert_new_availability(availability, facility_id, activity_id)
 
 
 def executeInsertSQL(sql: str, val):
