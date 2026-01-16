@@ -1,0 +1,17 @@
+server_old/*
+.env
+.gitignoregit
+scraper/bin
+scraper/lib
+scraper/include
+scraper/pyvenv.cfg
+scraper/.env
+scraper/logs.log
+server/.env
+server/target/*
+*.png
+*.docx
+*.pdf
+*.jpg
+ActiveTO-screenshots/*
+Active Screenshots/*
