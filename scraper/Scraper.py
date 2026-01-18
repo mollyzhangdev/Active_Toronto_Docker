@@ -15,10 +15,10 @@ from decouple import config
 import argparse
 
 GOOGLE_API_KEY = config('GOOGLE_API_KEY')
-HOST = config('MYSQL_HOST')
-DBUSER = config('MYSQL_USER')
-PASSWORD = config('MYSQL_PASSWORD')
-DATABASE = config('MYSQL_DATABASE')
+HOST = config('MYSQLHOST')
+DBUSER = config('MYSQLUSER')
+PASSWORD = config('MYSQLPASSWORD')
+DATABASE = config('MYSQLDATABASE')
 GOOGLE_API_URL = "https://maps.googleapis.com/maps/api/geocode/json?address="
 PROVINCE = "Ontario"
 RESOURCE_API = "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/package_show?id=da46e4ac-d4ab-4b1c-b139-6362a0a43b3c"
@@ -848,9 +848,5 @@ def update():
 
 
 if __name__ == "__main__":
-    time.sleep(30)
-    update()
-    schedule.every().saturday.at("02:00").do(update)
-    while 1:
-        schedule.run_pending()
-        time.sleep(1)
+
+        main()
