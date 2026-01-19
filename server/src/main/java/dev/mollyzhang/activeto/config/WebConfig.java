@@ -15,4 +15,10 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addConverter(new CityFilterEnumConverter());
         registry.addConverter(new TypeSortEnumConverter());
     }
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("https://activeto.mollyzhang.dev") // frontend URL
+                .allowedMethods("*");
+    }
 }
