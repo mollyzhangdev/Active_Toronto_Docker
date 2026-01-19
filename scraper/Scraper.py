@@ -21,7 +21,7 @@ PASSWORD = config('MYSQLPASSWORD')
 DATABASE = config('MYSQLDATABASE')
 GOOGLE_API_URL = "https://maps.googleapis.com/maps/api/geocode/json?address="
 PROVINCE = "Ontario"
-RESOURCE_API = "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/package_show?id=da46e4ac-d4ab-4b1c-b139-6362a0a43b3c"
+RESOURCE_API = "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/package_show"
 FACILITY_LIST_URL = "https://www.toronto.ca/data/parks/prd/facilities/recreationcentres/index.html"
 CITY_OF_TORONTO_URL = "https://www.toronto.ca"
 FACILITY_URL_PREFIX = "https://www.toronto.ca/data/parks/prd/facilities/complex/"
@@ -86,6 +86,7 @@ def getResources():
     global dropins, facilities, locations, registeredPrograms
     logger.info("Requesting resources from City of Toronto OpenAPI: " + RESOURCE_API)
     try:
+        params = {"id":"registered-programs-and-drop-in-courses-offering"}
         r = requests.get(url=RESOURCE_API, params=params)
         response = r.json()
     except (ConnectionError, Exception) as e:
