@@ -100,22 +100,24 @@ def getResources():
             name = resource["name"]
             url = resource["url"]
 
-            if resource["name"] in [DROPIN, FACILITIES]:
+            if resource["name"] in [DROPIN, FACILITIES, LOCATIONS]:
                 logger.info("Getting source file: " + resource["name"])
                 content = requests.get(url=url, params=params).json()
                 resources_dict[name] = content
             elif resource["name"] == LOCATIONS:
                 logger.info("Getting source file: " + resource["name"])
-                csv = requests.get(url=url, params=params).content
-                locations = pd.read_csv(
-                    io.StringIO(csv.decode("utf-8")), sep=",", header=0
-                )
+                content = requests.get(url=url, params=params).json()
+                # csv = requests.get(url=url, params=params).content
+                # locations = pd.read_csv(
+                #     io.StringIO(csv.decode("utf-8")), sep=",", header=0
+                # )
+                locations = content
                 # fill NaN values with ''
-                locations = locations.fillna("")
+                # locations = locations.fillna("")
 
         dropins = resources_dict[DROPIN]
         facilities = resources_dict[FACILITIES]
-        registeredPrograms = resources_dict[REGISTERED_PROGRAMS]
+        # registeredPrograms = resources_dict[REGISTERED_PROGRAMS]
     except Exception as e:
         logger.warning(e)
 
