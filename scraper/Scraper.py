@@ -25,10 +25,10 @@ RESOURCE_API = "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/pac
 FACILITY_LIST_URL = "https://www.toronto.ca/data/parks/prd/facilities/recreationcentres/index.html"
 CITY_OF_TORONTO_URL = "https://www.toronto.ca"
 FACILITY_URL_PREFIX = "https://www.toronto.ca/data/parks/prd/facilities/complex/"
-LOCATIONS = "Locations"
+LOCATIONS = "Locations.json"
 DROPIN = "Drop-in.json"
 FACILITIES = "Facilities.json"
-REGISTERED_PROGRAMS = "Registered Programs.json"
+# REGISTERED_PROGRAMS = "Registered Programs.json"
 
 # inserting sql staments
 TRANSLATION_SQL = "INSERT INTO `translation` () VALUES();"
@@ -100,7 +100,7 @@ def getResources():
             name = resource["name"]
             url = resource["url"]
 
-            if resource["name"] in [DROPIN, FACILITIES, REGISTERED_PROGRAMS]:
+            if resource["name"] in [DROPIN, FACILITIES]:
                 logger.info("Getting source file: " + resource["name"])
                 content = requests.get(url=url, params=params).json()
                 resources_dict[name] = content
