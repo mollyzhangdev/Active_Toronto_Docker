@@ -100,7 +100,7 @@ def getResources():
             name = resource["name"]
             url = resource["url"]
 
-            if resource["name"] in [DROPIN, FACILITIES, LOCATIONS]:
+            if resource["name"] in [DROPIN, FACILITIES]:
                 logger.info("Getting source file: " + resource["name"])
                 content = requests.get(url=url, params=params).json()
                 resources_dict[name] = content
