@@ -9,10 +9,8 @@ from datetime import datetime
 import mysql.connector as MySQL
 import pandas as pd
 import requests
-import schedule
 from bs4 import BeautifulSoup
 from decouple import config
-import argparse
 
 GOOGLE_API_KEY = config('GOOGLE_API_KEY')
 HOST = config('MYSQLHOST')
@@ -25,7 +23,7 @@ RESOURCE_API = "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/pac
 FACILITY_LIST_URL = "https://www.toronto.ca/data/parks/prd/facilities/recreationcentres/index.html"
 CITY_OF_TORONTO_URL = "https://www.toronto.ca"
 FACILITY_URL_PREFIX = "https://www.toronto.ca/data/parks/prd/facilities/complex/"
-LOCATIONS = "Locations.json"
+LOCATIONS = "Locations.csv"
 DROPIN = "Drop-in.json"
 FACILITIES = "Facilities.json"
 # REGISTERED_PROGRAMS = "Registered Programs.json"
@@ -52,6 +50,7 @@ FIND_ACTIVITY_BY_ID = "SELECT * FROM `activity` WHERE `id` = %s;"
 FIND_TYPE_BY_DESC = "SELECT * FROM `type` INNER JOIN `translation` ON `type`.title_translation_id = `translation`.id INNER JOIN `language_translation` ON `translation`.id = `language_translation`.translation_id WHERE description = %s"
 FIND_CATEGORY_BY_DESC = "SELECT * FROM `category` INNER JOIN `translation` ON `category`.title_translation_id = `translation`.id INNER JOIN `language_translation` ON `translation`.id = `language_translation`.translation_id WHERE description = %s"
 FIND_TRANSLATION_BY_DESC = "SELECT * FROM `language_translation` WHERE description = %s"
+FIND_AVAILABILITY_BY_START_TIME = "SELECT * FROM `availability` WHERE facility_id = %s AND activity_id = %s AND start_time = %s"
 
 # global mydb
 
@@ -106,14 +105,14 @@ def getResources():
                 resources_dict[name] = content
             elif resource["name"] == LOCATIONS:
                 logger.info("Getting source file: " + resource["name"])
-                content = requests.get(url=url, params=params).json()
-                # csv = requests.get(url=url, params=params).content
-                # locations = pd.read_csv(
-                #     io.StringIO(csv.decode("utf-8")), sep=",", header=0
-                # )
-                locations = content
+                # content = requests.get(url=url, params=params).json()
+                csv = requests.get(url=url, params=params).content
+                locations = pd.read_csv(
+                    io.StringIO(csv.decode("utf-8")), sep=",", header=0
+                )
+                # locations = content
                 # fill NaN values with ''
-                # locations = locations.fillna("")
+                locations = locations.fillna("")
 
         dropins = resources_dict[DROPIN]
         facilities = resources_dict[FACILITIES]
@@ -128,10 +127,20 @@ def getAvalibilities():
         availabilities = []
         for dropin in dropins:
             availability = {}
-            availability["start_time"] = dropin["Start Date Time"]
+
+            # availability["start_time"] = dropin["First Date"]
             startDatetime = datetime.strptime(
-                dropin["Start Date Time"], "%Y-%m-%dT%H:%M:%S"
+                dropin["First Date"], "%Y-%m-%d"
             )
+            if dropin["Start Hour"] != None:
+                startHour = dropin["Start Hour"]
+            else:
+                startHour = 0
+
+            if dropin["Start Minute"] != None:
+                startMin = dropin["Start Minute"]
+            else:
+                startMin = 0
             
             if dropin["End Hour"] != None:
                 endHour = dropin["End Hour"]
@@ -143,13 +152,17 @@ def getAvalibilities():
             else:
                 endMin = 0
             
+            startDatetime = startDatetime.replace(hour=startHour, minute=startMin)
+            availability["start_time"] = startDatetime.strftime("%Y-%m-%dT%H:%M:%S")
+            # print(availability["start_time"])
+
             endDatetime = startDatetime.replace(hour=endHour, minute=endMin)
             endDatetimeStr = endDatetime.strftime("%Y-%m-%dT%H:%M:%S")
             
             if datetime.strptime(endDatetimeStr, "%Y-%m-%dT%H:%M:%S") > datetime.now():
                 availability["end_time"] = endDatetimeStr
 
-                availability["category"] = dropin["Category"]
+                availability["category"] = dropin["Section"]
                 availability["location_id"] = dropin["Location ID"]
                 availability["course_id"] = dropin["Course_ID"]
                 availability["course_title"] = dropin["Course Title"]
@@ -348,14 +361,19 @@ def getPhoneUrlToFacilities(facilities):
                     facility["url"] = url
                     html = r.text
                     soup = BeautifulSoup(html, "lxml")
-                    li = (
-                        soup.find("div", attrs={"id": "pfr_complex_loc"})
-                        .find("ul")
-                        .find("li")
-                    )
-                    if "Phone" in li.text.strip():
-                        facility["phone"] = li.text.strip().split(":")[1].strip()
-                        logger.info("Got phone number for " + facility["facility_name"])
+                    # print("url:")
+                    # print(url)
+                    # print(html)
+                    container = soup.find("div", attrs={"id": "pfr_complex_loc"})
+                    if container:
+                        li = (
+                            container
+                            .find("ul")
+                            .find("li")
+                        )
+                        if "Phone" in li.text.strip():
+                            facility["phone"] = li.text.strip().split(":")[1].strip()
+                            logger.info("Got phone number for " + facility["facility_name"])
                 # else: 
                 #     facility["phone"] = '000-000-0000'
 
@@ -539,7 +557,7 @@ def store_new_availabilities(availabilities):
                 facility_id
             )
 
-        availability_id = availability_exists(facility_id, activity_id, start_time)
+        availability_id = availability_exists(facility_id, activity_id, availability["start_time"])
         if availability_id == 0:
             insert_new_availability(availability, facility_id, activity_id)
 
@@ -700,11 +718,11 @@ def insert_new_activity(new_activity, activity_id, type_id, facility_id):
     return activity_id
 
 
-def insert_new_availability(availablity, facility_id, activity_id):
-    start_time = availablity["start_time"]
-    end_time = availablity["end_time"]
-    age_min = availablity["age_min"]
-    age_max = availablity["age_max"]
+def insert_new_availability(availability, facility_id, activity_id):
+    start_time = availability["start_time"]
+    end_time = availability["end_time"]
+    age_min = availability["age_min"]
+    age_max = availability["age_max"]
     global row_affected_availability
 
     # insert a new row into Table Availability
