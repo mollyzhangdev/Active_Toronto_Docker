@@ -848,4 +848,4 @@ def update():
 
 
 if __name__ == "__main__":
-    main()
+    update()
