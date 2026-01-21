@@ -20,16 +20,17 @@ While an open resource API exists for Toronto's recreation facilities and activi
 * Beautiful Soup
 
 ## Endpoints Info
-### API base path: https://www.mollyzhang.dev/apps/activeto/api
+### API base path: https://www.api.activeto.mollyzhang.dev
 ### available city: toronto
 
 It provides in total 15 HTTP endpoints:
-![Screenshot 2024-05-16 at 11 57 59 PM](https://github.com/dongyue-zhang/Active_Toronto_Docker/assets/93807577/9eed7619-d593-4414-9de2-c674e31961d5)
+<img width="1000" height="1073" alt="Screenshot 2026-01-20 at 11 46 54 PM" src="https://github.com/user-attachments/assets/24417a38-f4bd-42b0-8b3a-eef3e19980e2" />
+
 
 ## Usage sample
-To explore all available types of activities, simply enter "https://www.mollyzhang.dev/apps/activeto/api/toronto/types" ("/{city}/types") into your browser's address bar. This will provide you with a dataset of activities in JSON format. From there, you can select specific activity types for further information. Simply substitute {id} with your desired type ID in the second endpoint ("/{city}/types/{id}").
+To explore all available types of activities, simply enter "https://www.api.activeto.mollyzhang.dev/toronto/types" ("/{city}/types") into your browser's address bar. This will provide you with a dataset of activities in JSON format. From there, you can select specific activity types for further information. Simply substitute {id} with your desired type ID in the second endpoint ("/{city}/types/{id}").
 
-Check more details about the endpoints in [Swagger-ui](https://www.mollyzhang.dev/apps/activeto/api).
+Check more details about the endpoints in [Swagger-ui](https://api.activeto.mollyzhang.dev/swagger-ui).
 
 ## Contact
 Molly Dongyue Zhang - [@dongyuezhang](https://www.linkedin.com/in/dongyue-zhang-507549224/)
