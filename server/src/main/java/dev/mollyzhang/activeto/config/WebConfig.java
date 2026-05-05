@@ -21,6 +21,8 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins("https://activeto.mollyzhang.dev") // frontend URL
                 .allowedOrigins("https://www.activeto.mollyzhang.dev")
-                .allowedMethods("*");
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedHeaders("*")
+                .allowCredentials(true);
     }
 }
