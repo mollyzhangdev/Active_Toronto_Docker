@@ -13,10 +13,10 @@ from bs4 import BeautifulSoup
 from decouple import config
 
 GOOGLE_API_KEY = config('GOOGLE_API_KEY')
-HOST = config('MYSQLHOST')
-DBUSER = config('MYSQLUSER')
-PASSWORD = config('MYSQLPASSWORD')
-DATABASE = config('MYSQLDATABASE')
+HOST = config('MYSQL_HOST')
+DBUSER = config('MYSQL_USER')
+PASSWORD = config('MYSQL_PASSWORD')
+DATABASE = config('MYSQL_DATABASE')
 GOOGLE_API_URL = "https://maps.googleapis.com/maps/api/geocode/json?address="
 PROVINCE = "Ontario"
 RESOURCE_API = "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/package_show"

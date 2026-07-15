@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.PI_USERNAME }}
           key: ${{ secrets.PI_SSH_KEY }}
           port: 22 # Change this if your SSH runs on a non-standard port
-          envs: MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD, TIME_ZONE, GOOGLE_API_KEY
+          envs: MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD, MYSQL_ROOT_PASSWORD, TIME_ZONE, GOOGLE_API_KEY
           debug: true
           script: |
             set -ex 
@@ -35,6 +35,7 @@ jobs:
             echo "MYSQL_DATABASE=$MYSQL_DATABASE" > .env
             echo "MYSQL_USER=$MYSQL_USER" >> .env
             echo "MYSQL_PASSWORD=$MYSQL_PASSWORD" >> .env
+            echo "MYSQL_ROOT_PASSWOR=$MYSQL_ROOT_PASSWOR" >> .env
             echo "MYSQL_PORT=$MYSQL_PORT" >> .env
             echo "TIME_ZONE=$TIME_ZONE" >> .env
             echo "GOOGLE_API_KEY=$GOOGLE_API_KEY" >> .env
