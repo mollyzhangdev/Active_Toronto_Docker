@@ -23,12 +23,18 @@ jobs:
           port: 22 # Change this if your SSH runs on a non-standard port
           script: |
             # 1. Navigate to your project directory (or create it if it doesn't exist)
-            mkdir -p ~/activetoapi
-            cd ~/activetoapi
+            cd ~/app_root/activeto_api
             
             # 2. Pull the latest code straight from GitHub
             # (Assumes your project directory is already a git clone repository)
             git pull origin master
+            
+            echo "MYSQL_DATABASE=$MYSQL_DATABASE" > .env
+            echo "MYSQL_USER=$MYSQL_USER" >> .env
+            echo "MYSQL_PASSWORD=$MYSQL_PASSWORD" >> .env
+            echo "MYSQL_PORT=$MYSQL_PORT" >> .env
+            echo "TIME_ZONE=$TIME_ZONE" >> .env
+            echo "API_KEY=$API_KEY" >> .env
             
             # 3. Pull down any updated base images, rebuild, and launch detached
             docker compose pull
