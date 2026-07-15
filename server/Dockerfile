@@ -1,13 +1,9 @@
-FROM maven:3.9.6-eclipse-temurin-17 AS build
-
-WORKDIR /app
-# Copy only the server project
-COPY server/pom.xml .
-COPY server/src ./src
-RUN mvn clean package -DskipTests
-
-FROM eclipse-temurin:17-jre-alpine
-WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
-EXPOSE 8080
-CMD ["sh","-c","java -jar app.jar"]
+FROM adoptopenjdk/openjdk11:latest as build
+COPY . /usr/app
+WORKDIR /usr/app
+RUN chmod +x mvnw \
+    && ./mvnw --version \
+    && ./mvnw clean package -DskipTests
+FROM adoptopenjdk/openjdk11:latest
+COPY --from=build /usr/app/target/*.jar app.jar
+ENTRYPOINT ["java","-jar","app.jar"]
