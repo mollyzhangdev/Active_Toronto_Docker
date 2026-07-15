@@ -22,7 +22,9 @@ jobs:
           key: ${{ secrets.PI_SSH_KEY }}
           port: 22 # Change this if your SSH runs on a non-standard port
           envs: MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD, TIME_ZONE, GOOGLE_API_KEY
+          debug: true
           script: |
+            set -ex 
             # 1. Navigate to your project directory (or create it if it doesn't exist)
             cd ~/app_root/activeto_api/Active_Toronto_Docker
             
