@@ -21,9 +21,10 @@ jobs:
           username: ${{ secrets.PI_USERNAME }}
           key: ${{ secrets.PI_SSH_KEY }}
           port: 22 # Change this if your SSH runs on a non-standard port
+          envs: MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD, TIME_ZONE, GOOGLE_API_KEY
           script: |
             # 1. Navigate to your project directory (or create it if it doesn't exist)
-            cd ~/app_root/activeto_api
+            cd ~/app_root/activeto_api/Active_Toronto_Docker
             
             # 2. Pull the latest code straight from GitHub
             # (Assumes your project directory is already a git clone repository)
@@ -34,7 +35,7 @@ jobs:
             echo "MYSQL_PASSWORD=$MYSQL_PASSWORD" >> .env
             echo "MYSQL_PORT=$MYSQL_PORT" >> .env
             echo "TIME_ZONE=$TIME_ZONE" >> .env
-            echo "API_KEY=$API_KEY" >> .env
+            echo "GOOGLE_API_KEY=$GOOGLE_API_KEY" >> .env
             
             # 3. Pull down any updated base images, rebuild, and launch detached
             docker compose pull
