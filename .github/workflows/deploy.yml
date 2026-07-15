@@ -7,6 +7,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: Raspberry Pi
 
     steps:
       # 1. Pull down your repository code into the GitHub runner
@@ -16,6 +17,13 @@ jobs:
       # 2. Open an SSH connection to your Pi, sync the project folder, and rebuild
       - name: Deploy to Pi via SSH
         uses: appleboy/ssh-action@v1.0.3
+        env: # 2. Hands off the unlocked secrets to this specific step
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+          MYSQL_USER: ${{ secrets.MYSQL_USER }}
+          MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
+          TIME_ZONE: ${{ secrets.TIME_ZONE }}
+          MYSQL_PORT: ${{ secrets.MYSQL_PORT }}
         with:
           host: ${{ secrets.PI_HOST }}
           username: ${{ secrets.PI_USERNAME }}
