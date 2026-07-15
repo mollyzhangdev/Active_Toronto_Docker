@@ -1,0 +1,38 @@
+name: Deploy Stack to Raspberry Pi
+
+on:
+  push:
+    branches: [ "master" ] # Triggers only when code hits the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Pull down your repository code into the GitHub runner
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      # 2. Open an SSH connection to your Pi, sync the project folder, and rebuild
+      - name: Deploy to Pi via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.PI_HOST }}
+          username: ${{ secrets.PI_USERNAME }}
+          key: ${{ secrets.PI_SSH_KEY }}
+          port: 22 # Change this if your SSH runs on a non-standard port
+          script: |
+            # 1. Navigate to your project directory (or create it if it doesn't exist)
+            mkdir -p ~/activetoapi
+            cd ~/activetoapi
+            
+            # 2. Pull the latest code straight from GitHub
+            # (Assumes your project directory is already a git clone repository)
+            git pull origin master
+            
+            # 3. Pull down any updated base images, rebuild, and launch detached
+            docker compose pull
+            docker compose up -d --build
+            
+            # 4. Clean up old dangling images to save precious Raspberry Pi storage
+            docker image prune -f
