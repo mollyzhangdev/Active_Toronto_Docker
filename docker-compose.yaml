@@ -15,7 +15,6 @@ services:
     ports:
       - ${MYSQL_PORT}:3306
     restart: always
-    build: ./init/
     volumes:
       - mysqlvol:/var/lib/mysql
       - ./init:/docker-entrypoint-initdb.d
