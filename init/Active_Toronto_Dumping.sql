@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.29, for macos12 (x86_64)
 --
--- Host: localhost    Database: active_v2
+-- Host: localhost    Database: activeto_v2
 -- ------------------------------------------------------
 -- Server version	8.0.30
 
@@ -18,12 +18,12 @@
 -- Creation of Database
 
 UNLOCK TABLES;
-CREATE DATABASE IF NOT EXISTS `active`;
-USE `active`;
+CREATE DATABASE IF NOT EXISTS `activeto`;
+USE `activeto`;
 SET TIME_ZONE='-05:00';
 
 -- CREATE USER 'admin'@'%' IDENTIFIED BY 'password';
--- GRANT ALL ON active.* TO 'admin'@'%';
+-- GRANT ALL ON activeto.* TO 'admin'@'%';
 -- FLUSH PRIVILEGES;
 --
 -- Table structure for table `language`
