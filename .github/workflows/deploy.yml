@@ -22,8 +22,10 @@ jobs:
           MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
           MYSQL_USER: ${{ secrets.MYSQL_USER }}
           MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
+          MYSQL_ROOT_PASSWORD: ${{secrets.MYSQL_ROOT_PASSWORD }}
           TIME_ZONE: ${{ secrets.TIME_ZONE }}
           MYSQL_PORT: ${{ secrets.MYSQL_PORT }}
+          GOOGLE_API_KEY: ${{secrets.GOOGLE_API_KEY}}
         with:
           host: ${{ secrets.PI_HOST }}
           username: ${{ secrets.PI_USERNAME }}
