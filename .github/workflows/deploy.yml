@@ -18,7 +18,6 @@ jobs:
       - name: Deploy to Pi via SSH
         uses: appleboy/ssh-action@v1.0.3
         env: # 2. Hands off the unlocked secrets to this specific step
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
           MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
           MYSQL_USER: ${{ secrets.MYSQL_USER }}
           MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
@@ -39,7 +38,6 @@ jobs:
             cd ~/app_root/activeto_api/Active_Toronto_Docker
             
             # 2. Pull the latest code straight from GitHub
-            # (Assumes your project directory is already a git clone repository)
             git pull origin master
             
             echo "MYSQL_DATABASE=$MYSQL_DATABASE" > .env

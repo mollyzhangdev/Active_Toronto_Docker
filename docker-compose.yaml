@@ -1,6 +1,6 @@
 version: "3.6"
 networks:
-  active-docker-network:
+  activeto-docker-network:
     driver: bridge
 services:
   mysqldb:
@@ -20,7 +20,7 @@ services:
       - mysqlvol:/var/lib/mysql
       - ./init:/docker-entrypoint-initdb.d
     networks:
-      active-docker-network:
+      activeto-docker-network:
   server:
     container_name: activeto-server
     depends_on:
@@ -39,7 +39,7 @@ services:
     stdin_open: true
     tty: true
     networks:
-      active-docker-network:
+      activeto-docker-network:
   scraper:
     container_name: activeto-scraper
     depends_on:
@@ -55,7 +55,7 @@ services:
       - TZ=${TIME_ZONE}
       - GOOGLE_API_KEY=${GOOGLE_API_KEY}
     networks:
-      active-docker-network:
+      activeto-docker-network:
 
 
 volumes:
