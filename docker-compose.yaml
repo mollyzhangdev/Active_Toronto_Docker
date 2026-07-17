@@ -1,7 +1,5 @@
 version: "3.6"
-networks:
-  activeto-docker-network:
-    driver: bridge
+
 services:
   mysqldb:
     container_name: activeto-mysql
@@ -59,3 +57,7 @@ services:
 
 volumes:
   mysqlvol:
+
+networks:
+  activeto-docker-network:
+    driver: bridge
