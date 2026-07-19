@@ -22,6 +22,7 @@ jobs:
           MYSQL_USER: ${{ secrets.MYSQL_USER }}
           MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
           MYSQL_ROOT_PASSWORD: ${{secrets.MYSQL_ROOT_PASSWORD }}
+          SERVER_PORT: ${{secrets.SERVER_PORT}}
           TIME_ZONE: ${{ secrets.TIME_ZONE }}
           MYSQL_PORT: ${{ secrets.MYSQL_PORT }}
           GOOGLE_API_KEY: ${{secrets.GOOGLE_API_KEY}}
@@ -30,7 +31,7 @@ jobs:
           username: ${{ secrets.PI_USERNAME }}
           key: ${{ secrets.PI_SSH_KEY }}
           port: 22 # Change this if your SSH runs on a non-standard port
-          envs: MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD, MYSQL_ROOT_PASSWORD, TIME_ZONE, GOOGLE_API_KEY, MYSQL_PORT
+          envs: MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD, MYSQL_ROOT_PASSWORD, TIME_ZONE, GOOGLE_API_KEY, MYSQL_PORT, SERVER_PORT
           debug: true
           script: |
             set -ex 
@@ -45,6 +46,7 @@ jobs:
             echo "MYSQL_PASSWORD=$MYSQL_PASSWORD" >> .env
             echo "MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD" >> .env
             echo "MYSQL_PORT=$MYSQL_PORT" >> .env
+            echo "SERVER_PORT=$SERVER_PORT" >> .env
             echo "TIME_ZONE=$TIME_ZONE" >> .env
             echo "GOOGLE_API_KEY=$GOOGLE_API_KEY" >> .env
             
